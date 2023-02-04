@@ -1,23 +1,13 @@
-import logo from './logo.svg';
-import './App.css';
+import Footer from "./components/Footer";
+import ItemListContainer from "./components/ItemListContainer";
+import Navbar from "./components/Navbar";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Navbar></Navbar>
+      <ItemListContainer greeting={"Como no tengo ganas de poner una imagen decidi simplemente poner un H1 y un lorem para rellenar texto. CSS y Bootstrap no son mi fuerte pero lo intento :)"} ></ItemListContainer>
+      <Footer></Footer>
     </div>
   );
 }
