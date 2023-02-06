@@ -3,9 +3,9 @@ import carritoImagen from "./images/carrito.svg"
 
 const CartWidget = () => {
     return (
-        <button type="button" className="btn btn-primary ml-auto bg-dark-subtle bg-dark-border">
+        <button type="button" className="btn btn-success ml-auto">
             <img src={carritoImagen} alt="carrito de compras" width={24}/>
-            <span className="badge rounded-pill bg-danger">5</span>
+            <span className="badge rounded-pill bg-danger">4</span>
         </button>
     )
 }
