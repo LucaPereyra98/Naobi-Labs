@@ -43,7 +43,7 @@ const ItemCount = ({stock}) => {
             <div className="row my-1">
                 <div className="col">
                     <div className="btn-group">
-                        <button className="btn btn-success" onClick={onAdd}>Agregar a carrito</button>
+                        <button className="btn btn-success" onClick={onAdd}>Agregar al carrito</button>
                     </div>
                 </div>
             </div>
