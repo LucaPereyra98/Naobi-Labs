@@ -1,4 +1,4 @@
-import logoWhite from "./images/logo-white.svg"
+import logoWhite from "../images/logo/logo-white.svg"
 
 const Footer = () => {
     return (
@@ -10,7 +10,7 @@ const Footer = () => {
                             <img src={logoWhite} alt="logo" className="img-logo mb-2" />
                             <h5 className="text-uppercase mb-2 font-weight-bold text-warning">Naobi Labs Shops</h5>
                         </a>
-                        <p className="text-white">Para que tu estilo llegue hasta donde la luz alcance a tocar</p>
+                        <p className="text-white">Desde el laboratorio del gaming hasta tu casa</p>
                     </div>
                     <div className="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
                         <h5 className="text-uppercase mb-3 font-weight-bold text-warning">Accesos rapidos</h5>
