@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom"
 import logoWhite from "../images/logo/logo-white.svg"
 
 const Footer = () => {
@@ -15,16 +16,16 @@ const Footer = () => {
                     <div className="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
                         <h5 className="text-uppercase mb-3 font-weight-bold text-warning">Accesos rapidos</h5>
                         <p>
-                            <a href={"/"} className="text-white text-decoration-none">Home</a>
+                            <NavLink to={"/"} className="text-white text-decoration-none"> Home </NavLink>
                         </p>
                         <p>
-                            <a href={"/productos"} className="text-white text-decoration-none">Productos</a>
+                            <NavLink to={"/productos"} className="text-white text-decoration-none"> Productos </NavLink>
                         </p>
                         <p>
-                            <a href={"/sobreNosotros"} className="text-white text-decoration-none">Sobre nosotros</a>
+                            <NavLink to={"/sobreNosotros"} className="text-white text-decoration-none"> Sobre nosotros </NavLink>
                         </p>
                         <p>
-                            <a href={"/contacto"} className="text-white text-decoration-none">Contacto</a>
+                            <NavLink to={"/contacto"} className="text-white text-decoration-none"> Contacto </NavLink>
                         </p>
                     </div>
                 </div>

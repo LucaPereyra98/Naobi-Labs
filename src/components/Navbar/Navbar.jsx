@@ -15,22 +15,25 @@ const Navbar = () => {
                         <li className="nav-item">
                             <Link className="nav-link active" activeclassname={"active"} to={"/"}>Inicio</Link>
                         </li>
-                        <div class="dropdown">
-                            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <div className="dropdown">
+                            <button className="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Productos
                             </button>
-                            <ul class="dropdown-menu">
+                            <ul className="dropdown-menu">
                                 <li>
-                                    <NavLink class="dropdown-item text-decoration-none text-dark" activeclassname={"active"} to={"/category/playstation"}>PlayStation</NavLink>
+                                    <NavLink className="dropdown-item text-decoration-none text-dark" activeclassname={"active"} to={"/category/playstation"}>PlayStation</NavLink>
                                 </li>
                                 <li>
-                                    <NavLink class="dropdown-item text-decoration-none text-dark" activeclassname={"active"} to={"/category/xbox"}>Xbox</NavLink>
+                                    <NavLink className="dropdown-item text-decoration-none text-dark" activeclassname={"active"} to={"/category/xbox"}>Xbox</NavLink>
                                 </li>
                                 <li>
-                                    <NavLink class="dropdown-item text-decoration-none text-dark" activeclassname={"active"} to={"/category/nintendo"}>Nintendo</NavLink>
+                                    <NavLink className="dropdown-item text-decoration-none text-dark" activeclassname={"active"} to={"/category/nintendo"}>Nintendo</NavLink>
                                 </li>
                                 <li>
-                                    <NavLink class="dropdown-item text-decoration-none text-dark" activeclassname={"active"} to={"/category/steam"}>Steam</NavLink>
+                                    <NavLink className="dropdown-item text-decoration-none text-dark" activeclassname={"active"} to={"/category/steam"}>Steam</NavLink>
+                                </li>
+                                <li>
+                                    <NavLink className="dropdown-item text-decoration-none text-dark" activeclassname={"active"} to={"/"}>Todos</NavLink>
                                 </li>
                             </ul>
                         </div>
