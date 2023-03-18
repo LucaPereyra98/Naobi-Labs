@@ -4,8 +4,8 @@ import { CartContext } from "../Context/CartContext"
 import basuraTacho from "../images/icons/basura.svg"
 
 const Cart = () => {
-    const {cart, cartTotal, cartSum, removeItem, clear} = useContext(CartContext)
-
+    const {cart, removeItem, cartTotal, cartSum} = useContext(CartContext);
+    
     if (cartTotal() === 0) {
         return (
             <div className="container">
@@ -23,13 +23,13 @@ const Cart = () => {
     return (
         <div className="container">
             <div className="row">
+                <h1 className="text-center"> Carrito de compras </h1>
                 <div className="col-md-12">
                     <div style={{minHeight:'69.5vh'}} className="container my-5">
-                        <h1 className="text-center"> Carrito de compras </h1>
                         <table className="table">
                             <tr>
                                 <td className="text-end" colSpan={5}>
-                                    <Link className="btn btn-danger bg-danger" onClick={() => {clear()}} > Vaciar carrito </Link>
+                                    
                                 </td>
                             </tr>
                             {
@@ -38,10 +38,10 @@ const Cart = () => {
                                         <td className="text-start" width="10%">
                                             <img src={item.imagen} alt={item.nombre} width={100} className="text-start"></img>
                                         </td>
-                                        <td className="text-start align-middle" width="40%">{item.nombre}</td>
+                                        <td className="text-start align-middle" width="30%">{item.nombre}</td>
                                         <td className="text-start align-middle" width="20%">{item.cantidad} x $ {item.precio}</td>
                                         <td className="text-start align-middle" width="20%">$ {item.cantidad * item.precio}</td>
-                                        <td className="text-end align-middle" width="10%">
+                                        <td className="text-end align-middle" width="20%">
                                             <Link onClick={() => {removeItem(item.index)}} title={"Eliminar producto"}>
                                                 <img src={basuraTacho} alt={"eliminar items"} width={40} />
                                             </Link>
@@ -57,7 +57,9 @@ const Cart = () => {
                                         $ {cartSum()}
                                     </b>
                                 </td>
-                                <td> &nbsp; </td>
+                                <td className={"text-end"}>
+                                    <Link to={"/checkout"} className="btn btn-danger bg-danger" >Finalizar compra</Link>
+                                </td>
                             </tr>
                         </table>
                     </div>
